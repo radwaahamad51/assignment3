@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,9 +24,40 @@
       }
     }
   </script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<style>
+  .font-manrope{
+    font-family: "Manrope", sans-serif;
+  }
+</style>
+<style>
+  @media only screen and (max-width: 600px) {
+  .hide {
+    display: none;
+  }
+  .a-barn{
+    font: size 1rem; 
+    
+  }
+  .section-1{
+    margin-right: auto;
+    margin-left: 15px;
+  }
+  .margin{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .margin-top{
+    margin-top: 10px;
+  }
+  
+}
+</style>
 </head>
-<body>
+<body class="font-manrope">
     <header>
         <nav>
             <div class="navbar bg-base-100">
@@ -49,35 +80,96 @@
                     <ul
                       tabindex="0"
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 3</a></li>
+                      <li><a>Home</a></li>
+                      <li><a>Service</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">Rinterio</a>
+                  
+                  <a class="btn btn-ghost text-xl"> <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="rgba(171,239,95,1)"
+                    viewBox="0 0 24 24"
+                    >
+                    <path fill="none"
+                    
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M0 0h24v24H0z" />
+                      <path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM13 12H16L12 8L8 12H11V16H13V12Z"></path>
+                  </svg>Rinterio</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 3</a></li>
+                    <li><a class="font-bold">Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
+                
+                <div class="navbar-end gap-4 hide " >
+                  <div class="border-2 border-indigo-500/100  border-inherit rounded-full p-1.5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      >
+                      <path fill="none"
+                      
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M0 0h24v24H0z" />
+                        <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
+                    </svg>
+                  </div>
+                  <div class="border-2 border-indigo-500/100  border-inherit rounded-full p-1.5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      >
+                      <path fill="none"
+                      
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M0 0h24v24H0z" />
+                        <path d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM6.00436 7.00265V13.0027H17.5163L19.3163 7.00265H6.00436ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"></path>
+                    </svg>
+                  </div>
+                  <a class="btn bg-btn-primary rounded-3xl ">Book Consult <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    >
+                    <path fill="none"
+                    
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M0 0h24v24H0z" />
+                      <path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM13 12H16L12 8L8 12H11V16H13V12Z"></path>
+                  </svg></a>
+                  
                 </div>
               </div>
         </nav>
-        <section class="mb-7">
+        <section class="mb-7 ">
             <div class="flex justify-center ">
                 <img src="assets/banner.png" alt="">
             </div>
             <div class="text-center  gap-5">
-                <h2 class="text-7xl font-bold"> A barn house of this design has a <br> striking appearance</h2>
+                <h2 class="text-7xl font-bold a-barn"> A barn house of this design has a <br> striking appearance</h2>
                 <p class=" text-base mt-12"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
                 <button class="btn bg-btn-primary mt-12 font-bold ">
                     View Details
@@ -99,7 +191,7 @@
         </section>
     </header>
     <main >
-      <section class="sm:grid-rows-1 bg-bg-1 ">
+      <section class="sm:grid-rows-1 bg-bg-1 section-1 ">
         <img src="assets/Vector.png" alt="" class="p-5 pl-32">
         <div class=" lg:flex justify-around mt-2 sm:grid-rows-1 mx-3 m-auto items-center  ">
           <div class="grid gap-4">
@@ -145,14 +237,14 @@
               </div>
 
           </div>
-          <div>
+          <div class="margin-top">
             <img src="assets/Rectangle.png" alt="" class="">
           </div>
         </div>
       </section>
 
 
-      <section>
+      <section class="section-1">
         <div>
           <div>
             <img src="" alt="">
@@ -163,7 +255,7 @@
       </section>
 
 
-      <section class="bg-bg-1 pt-3 pb-3">
+      <section class="bg-bg-1 pt-3 pb-3 section-1">
         <div class="text-center justify-items-center grid gap-4 mb-7 mt-12 mb-7 pt-4 ">
           <button class="btn h-9 w-44 rounded-2xl xl ">
             <svg
@@ -183,23 +275,23 @@
           <h2 class="font-bold">Our Works Process</h2>
           <p>The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
         </div>
-        <div class="lg:grid grid-cols-4 gap-4 max-w-screen-xl mx-auto sm:p-2 mb-7 ">
-          <div class="bg-btn-1 p-5 rounded-2xl ">
+        <div class="lg:grid grid-cols-4 gap-4 max-w-screen-xl mx-auto sm:p-2 mb-7 card-1 ">
+          <div class="bg-btn-1 p-5 rounded-2xl margin ">
             <img src="assets/concept.png" alt="">
             <h2 class="font-bold text-sm">Concept</h2>
             <p>The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
           </div>
-          <div class="bg-btn-2 p-5 rounded-2xl">
+          <div class="bg-btn-2 p-5 rounded-2xl margin">
             <img src="assets/flow-chart.png" alt="">
             <h2 class="font-bold text-sm">Design</h2>
             <p>The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
           </div>
-          <div class="bg-btn-3 p-5 rounded-2xl">
+          <div class="bg-btn-3 p-5 rounded-2xl margin">
             <img src="assets/vision.png" alt="">
             <h2 class="font-bold text-sm">Supervision</h2>
             <p>The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
           </div>
-          <div class="bg-btn-4 p-5 rounded-2xl">
+          <div class="bg-btn-4 p-5 rounded-2xl margin">
             <img src="assets/budget-planning.png" alt="">
             <h2 class="font-bold text-sm">Budget Planning</h2>
             <p>The barn house captivates <br> with its blend of rustic charm <br>and modern.</p>
@@ -208,7 +300,7 @@
       </section>
 
 
-      <section>
+      <section class="section-1">
         <div class="text-center justify-items-center grid gap-4 mb-7 mt-12 mb-7 pt-4">
           <button class="btn bg-btn-primary">
             <svg
@@ -276,7 +368,7 @@
       </section>
 
 
-      <section>
+      <section class="section-1 bg-bg-1 pb-6">
         <div class="text-center justify-items-center grid gap-4 mb-7 mt-12 mb-7 pt-4">
           <button class="btn">
             <svg
@@ -390,7 +482,7 @@
       </section>
 
 
-      <section class="bg-repeat ... bg-cover m-4 pb-16 pt-5" style="background-image: url(assets/bg.jpg)  ">
+      <section class="bg-repeat ... bg-cover m-4 pb-16 pt-5 section-1" style="background-image: url(assets/bg.jpg)  ">
         <div class="text-center justify-items-center grid gap-4 mb-7 mt-12 mb-7 pt-4">
           <button class="btn">
             <svg
@@ -457,8 +549,24 @@
     </main>
     <footer class="bg-black pb-16 pt-10">
       <div class="text-center justify-items-center grid gap-4 mb-7 mt-12 mb-7 pt-4">
-        <span><h2 class="text-white">Rinterio</h2></span>
-        <p>The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
+      
+                  
+      <a class="btn btn-ghost text-xl font-bold text-white "> <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="rgba(171,239,95,1)"
+        viewBox="0 0 24 24"
+        >
+        <path fill="none"
+        
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M0 0h24v24H0z" />
+          <path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM13 12H16L12 8L8 12H11V16H13V12Z"></path>
+      </svg>Rinterio</a>
+    
+        <p class="text-slate-400">The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
       </div>
       <div class="text-center justify-items-center grid gap-4 mb-7 mt-12 mb-7 pt-4 lg:grid-cols-5 ">
         <div><h4 class="text-white">Home</h4></div>
